@@ -1,0 +1,378 @@
+/* DOCUMENT INFORMATION
+    - Document : thé thème
+    - version : 1.0.0
+    - Author : Salomé
+*/
+
+/* COLORS
+    - defaut body text#eee
+    -h1     #eee
+    -h2     #474545
+    -h3
+    
+    -button
+    -button:hover
+
+    -icon   #e28915
+
+    -border
+*/
+
+/* FONTS
+    -Default    Baloo Tammudu 2 / Lato
+    -Subtitle
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+
+*/
+
+/* GLOBAL
+**************************************** */
+
+html{
+    background-color: #fff;
+}
+h1, h2, h3, h4{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 400;
+    word-spacing: 8px;
+}
+h1{
+    color: #eee;
+}
+h2{
+    color: #474545;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e28915;
+    width: 100px;
+    content: " ";
+    margin:0 auto;
+    margin-top:10px;
+}
+h3{
+    font-size:160%;
+}
+h4{
+    margin-top: 30px;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section{
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER
+**************************************** */
+
+header{
+    background-image: linear-gradient(rgba(166, 38, 240, 0.411), rgba(236, 150, 22, 0.6)), url(../img/ballon-basketball.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-title{
+    position: absolute;
+    top: 30%;
+    max-width:80%
+}
+.home-title h1{
+    font-size: 340%;
+    color: #fff;
+}
+.home-title h1 span{
+    font-weight: 700;
+}
+.home-title p{
+    color: #fff;
+}
+
+/* BUTTON */
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+.btn-full{
+    background: #fff;
+    color: #e28915;
+    margin-right: 15px;
+}
+.btn-ghost{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-full:hover{
+    background-color: #e28915;
+    color: #fff;
+}
+.btn-ghost:hover{
+    background-color: #e28915;
+    border: 1px solid #e28915;
+    color: #fff;
+}
+
+/* PRODUITS
+**************************************** */
+.produits-plus{
+    margin: 20px 0;
+}
+.produits-plus:hover .produits-icon {
+    color: #474545;
+    transform: translateX(20px);
+}
+.produits-img{
+    max-width: 100%;
+    height: 450px;
+}
+.produits-icon{
+    font-size: 34px;
+    color: #e28915;
+    transition: all 1s;
+}
+
+/* EQUIPES NBA
+****************************************** */
+
+.equipes-nba{
+    background-color: rgb(173, 28, 59);
+}
+.equipes-details{
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+.equipes-details img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.equipes-details h4{
+    text-align: center;
+}
+.equipes-nba h2{
+    color: #fff;
+}
+.equipes-nba h2:after{
+    background-color: #fff;
+}
+
+/* GALERIES PHOTOS
+****************************************** */
+
+.galeries-img{
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+/* 
+.galeries-title{
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.galeries-title h4{
+    color: #e28915;
+}
+ */
+
+/* AVIS CLIENTS
+****************************************** */
+.clients{
+    background-image: linear-gradient(rgba(166, 38, 240, 0.411), rgba(236, 150, 22, 0.6)), url(../img/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clients h2{
+    color: #fff;
+}
+.clients h2:after{
+    background-color: #fff;
+}
+blockquote{
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: #fff;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 800%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    top: 60px;
+    left: -17px;
+    color: rgba(255,255,255,0.5);
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+cite img{
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS
+****************************************** */
+
+.pack{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.pack h3{
+    color: #e28915;
+    font-weight: 400;
+}
+.pack h4{
+    font-size: 200%;
+    font-weight: 100;
+}
+.pack-title{
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #e3e0e0;
+}
+.pack span{
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+.pack-content ul{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.pack-content ul li i{
+    font-size: 90%;
+    margin-right: 10px;
+}
+.pack-signup{
+    text-align: center;
+}
+.pack-signup:hover .btn-pack{
+    background-color: #ad1c3b;
+    color: #fff;
+}
+.btn-pack{
+    background-color:#e28915;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-pack1{
+    background-color:#fff;
+    color: #ad1c3b;
+    margin-bottom: 20px;
+}
+.pack-signup:hover .btn-pack1{
+    background-color: #e28915;
+    color: #fff;
+}
+.pack-premium{
+    background-color: #ad1c3b;
+    color: #fff;
+}
+.pack-premium h3{
+    color: #fff;
+}
+/* .pack-title-premium{ 
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: -150px;
+    right: -240px;
+    background-color: #fff;
+    color: #ad1c3b;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px;
+}*/
+
+/* CONTACTS
+****************************************** */
+
+.contact-form{
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.contact-message{
+    width: 100%;
+}
+.btn-contact{
+    background: #e28915;
+    color: #fff;
+}
+.btn-contact:hover{
+    background-color: #ad1c3b;
+    color: #fff;
+}
+.map{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+i{
+    padding: 5px;
+}
+input, select, textarea{
+    border-radius: 5px;
+    border: 1px solid #ad1c3b;
+}
+
+
+/* FOOTER
+****************************************** */
+
+footer{
+    background-color: #ad1c3b;
+    color: #fff;
+    height: 85px;
+    padding: 20px 20px;
+}
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    color: #fff;
+}
